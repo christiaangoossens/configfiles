@@ -40,14 +40,15 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'stanangeloff/php.vim'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'stephpy/vim-php-cs-fixer'
-" Plugin 'valloric/youcompleteme'
 Plugin 'quramy/tsuquyomi'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'moll/vim-bbye'
-Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'posva/vim-vue'
 Plugin 'sekel/vim-vue-syntastic'
+Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'editorconfig/editorconfig-vim'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -102,7 +103,7 @@ set noerrorbells         " don't beep
 set nobackup
 set noswapfile
 
-set pastetoggle=<F2>
+set pastetoggle=<F3>
 
 set mouse=a
 
@@ -178,3 +179,7 @@ vnoremap <leader>d ""d
 nnoremap <leader>c ""c
 nnoremap <leader>C ""C
 vnoremap <leader>c ""c
+
+let g:livepreview_previewer = '/home/christiaan/mupdf.inotify'
+let g:livepreview_engine = 'latexmk' . ' [options]'
+let NERDTreeShowHidden=1
